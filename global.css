@@ -84,13 +84,13 @@ body {
 }
 
 .olla {
-  bottom: 250px;
+  bottom: 270px;
   left: calc(50% + 90px);
   width: 120px;
 }
 
 .recetario {
-  bottom: 250px;
+  bottom: 270px;
   left: calc(50% - 230px);
   width: 120px;
 }
