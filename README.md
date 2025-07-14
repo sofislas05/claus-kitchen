@@ -2,6 +2,7 @@
 This is a mini webdev project where I am applying what I learned about Astro, CSS, and HTML during my Cardinal Quarter experience.
 I made this webpage for my mom because she loves cooking and sharing her recipes with family and friends. 
 
+![Clau's Kitchen Home](claus-kitchen-home.png "Home")
 
 First of all, I started this project with a minimal Astro template.
 npm create astro@latest -- --template minimal
