@@ -1,0 +1,540 @@
+body {
+  margin: 0;
+  font-family: 'Just Me Again Down Here', cursive;
+  background-color: #fdf4f2;
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.titulo-link {
+  position: absolute;
+  top: 5px;
+  left: 65px;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 2;
+  display: inline-block;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  white-space: nowrap; /* ¡Esto evita el salto de línea! */
+}
+.titulo-link:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.titulo {
+  font-size: 50px;
+  color: rgb(241, 230, 230);
+  margin: 0;
+  /* quitamos posicionamiento porque lo maneja el link */
+}
+
+.mama,
+.olla,
+.recetario {
+  z-index: 3;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Contenedores clickeables absolutos */
+.interactivo {
+  position: absolute;
+  cursor: pointer;
+  z-index: 3;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Hover en contenedor afecta la imagen dentro */
+.interactivo:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Imágenes ocupan todo el contenedor */
+.interactivo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Posiciones y tamaños */
+.mama {
+  bottom: 293px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+}
+
+.olla {
+  bottom: 250px;
+  left: calc(50% + 90px);
+  width: 120px;
+}
+
+.recetario {
+  bottom: 250px;
+  left: calc(50% - 230px);
+  width: 120px;
+}
+
+
+.interactivo:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.menu {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffeae6;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 4;
+  box-sizing: border-box;
+}
+
+.redes {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-links {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: auto; /* ESTO los empuja a la derecha */
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #c0503f;
+  font-size: 22px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #c0503f;
+  font-size: 22px;
+  text-align: center;
+}
+
+.redes img {
+  height: 24px;
+  margin-right: 1rem;
+}
+
+.footer {
+  background-color: #ffeae6; /* mismo color que la barra del menú */
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Just Me Again Down Here', cursive;
+  font-size: 18px;
+  color: #c0503f;
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.interactivo:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #c0503f;
+  font-size: 22px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  display: inline-block; /* para que transform funcione bien */
+}
+
+.menu-links a:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.titulo {
+  position: absolute;
+  top: 5px;
+  left: 65px;
+  font-size: 58px;
+  color: rgb(241, 230, 230);
+  z-index: 2;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  cursor: default; /* opcional, si querés que no parezca clickeable */
+}
+
+.titulo:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.icono-red {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.icono-red:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.icono-red img {
+  height: 35px;
+  display: block;
+}
+
+.titulo-sobre {
+  font-size: 60px;
+  margin-bottom: 2rem;
+}
+
+.volver-inicio {
+  font-size: 20px;
+  color: #c0503f;
+  text-decoration: none;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  display: inline-block;
+}
+
+.volver-inicio:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.titulo-sobre-link {
+  position: absolute;
+  top: 5px;
+  left: 65px;
+  text-decoration: none;
+  z-index: 2;
+  display: inline-block;
+  white-space: nowrap;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  color: #c0503f; /* nuevo color más intenso para esta página */
+}
+
+.titulo-sobre-link:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.titulo-sobre {
+  font-size: 42px; 
+  margin: 0 0 1rem 0;
+  color: #c0503f;
+}
+
+.sobre-clau {
+  position: relative;
+  height: 100vh; /* ¡Simula la página principal! */
+  padding: 10rem 2rem 6rem 2rem; 
+  background-color: #fdf4f2;
+  font-family: 'Just Me Again Down Here', cursive;
+  color: #c0503f;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.foto-mama {
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 2rem;
+}
+
+.parrafo {
+  font-size: 24px;
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  padding: 0; /* importantísimo */
+  background-color: #fdf4f2;
+  font-family: 'Just Me Again Down Here', cursive;
+}
+
+.receta {
+  margin-bottom: 6rem;
+  background-color: #fff;
+  border-radius: 32px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.imagen-receta {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+.titulo-receta {
+  font-size: 48px;
+  color: #c0503f;
+  text-align: center;
+}
+
+.texto-receta {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #432b23;
+}
+
+html, body {
+  height: auto;
+  min-height: 100%;
+  overflow-y: auto;
+}
+
+.footer {
+  position: relative; /* o static */
+  /* sin bottom ni top fijos */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 120vh; /* para que el footer esté al final */
+}
+
+section.sobre-clau {
+  flex-grow: 1;
+}
+
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffeae6;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+body.layout-column {
+  display: flex;
+  flex-direction: column;
+  min-height: 250vh;
+}
+
+.layout-column {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.cocinar-contenido {
+  padding: 6rem 0rem 0rem 0rem; /* Reducido de 8rem a 6rem en la parte superior */
+  flex-grow: 1;
+  background-color: #fdf4f2;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 36px;
+  color: #c0503f;
+  margin-bottom: 3rem;
+}
+
+.tarjetas-recetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.tarjeta {
+  background-color: #fff;
+  border-radius: 32px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-decoration: none;
+  color: #c0503f;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  width: 250px;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
+
+.imagen-tarjeta {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.descripcion-tarjeta {
+  padding: 1rem;
+  font-size: 18px;
+}
+
+.receta {
+  margin-top: -40px; /* sube sobre la imagen */
+  padding: 3rem 2rem 6rem 2rem; /* ajustá el padding a gusto */
+  background-color: #fff;
+  border-radius: 32px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.bloque {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.bloque:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.imagen-seccion {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.texto {
+  max-width: 500px;
+  font-size: 20px;
+  color: #432b23;
+}
+
+.subtitulo {
+  font-family: 'Just Me Again Down Here', cursive;
+  color: #c0503f;
+  font-size: 32px;
+  margin-bottom: 1rem;
+}
+
+.preparacion {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #432b23;
+}
+
+.imagen-receta-top {
+  width: 100vw; /* full viewport width */
+  height: 250px; /* ajustá la altura a gusto */
+  object-fit: cover;
+  border-radius: 0; /* sin esquinas redondeadas */
+  box-shadow: 2; /* opcional: sin sombra */
+  display: block;
+}
+
+.receta-titulo-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #c0503f;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  white-space: nowrap;
+}
+
+.receta-titulo-link:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+header.recipe-header {
+  padding: 1rem 2rem; /* si tenías algo como 4rem, bajalo */
+  text-align: center;
+}
+
+.encabezado-receta {
+  text-align: center;
+  padding: 1rem 1.5rem;
+}
+
+.boton-volver {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 18px;
+  background-color: #ffeae6;
+  color: #c0503f;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: 'Just Me Again Down Here', cursive;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  z-index: 1000;
+}
+
+.boton-volver:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.receta-post .receta {
+  margin-top: -40px;
+}
+
+.claus-favorites {
+  padding: 3rem;
+  background-color: #fdf4f2;
+  text-align: center;
+  font-family: 'Just Me Again Down Here', cursive;
+  color: #c0503f;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: auto;
+}
+
+.menu-links a.active {
+  font-weight: bold;
+  background-color: #ff7f50;
+  color: white;
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+}
