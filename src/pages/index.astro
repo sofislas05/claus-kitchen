@@ -1,16 +1,44 @@
 ---
+// src/pages/index.astro
+import Navbar from '../components/Navbar.astro';
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Clau's Kitchen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/global.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <img src="/fondo.jpg" alt="Cocina de fondo" class="background" />
+
+      <a href="#" class="titulo-link" title="Inicio">
+        <h1 class="titulo">Clau’s Kitchen</h1>
+      </a>
+
+      <a href="/sobre-clau" class="interactivo mama" title="Conocé a Clau">
+        <img src="/mama.png" alt="Mamá cocinera" />
+      </a>
+
+      <a href="/comenza-a-cocinar" class="interactivo olla" title="Ver recetas">
+        <img src="/olla.png" alt="Olla" />
+      </a>
+
+      <a href="/claus-favorites" class="interactivo recetario" title="Abrí el recetario">
+        <img src="/recetario.png" alt="Recetario" />
+      </a>
+
+      <Navbar />
+
+    </section>
+	<footer class="footer">
+		<p>© 2025 Clau's Kitchen. Con amor desde la cocina 💕</p>
+	</footer>
+  </body>
 </html>

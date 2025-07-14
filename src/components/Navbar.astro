@@ -1,0 +1,20 @@
+---
+// src/components/Navbar.astro
+const currentPath = Astro.url.pathname;
+---
+<nav class="menu">
+  <div class="redes">
+    <a href="https://www.facebook.com/tu-pagina" target="_blank" rel="noopener noreferrer" title="Facebook" class="icono-red">
+      <img src="/facebook.png" alt="Facebook" />
+    </a>
+    <a href="https://www.instagram.com/tu-pagina" target="_blank" rel="noopener noreferrer" title="Instagram" class="icono-red">
+      <img src="/instagram.png" alt="Instagram" />
+    </a>
+  </div>
+
+  <ul class="menu-links">
+    <li><a href="/sobre-clau" class={currentPath === '/sobre-clau' ? 'active' : ''}>Sobre Clau</a></li>
+    <li><a href="/claus-favorites" class={currentPath === '/claus-favorites' ? 'active' : ''}>Clau's favorites</a></li>
+    <li><a href="/comenza-a-cocinar" class={currentPath.startsWith('/comenza-a-cocinar') ? 'active' : ''}>Comenzá a cocinar</a></li>
+  </ul>
+</nav>

@@ -1,0 +1,51 @@
+---
+const { title, image } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title} | Clau's Kitchen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/global.css" />
+  </head>
+  <body class="layout-column receta-post">
+    <a href="/comenza-a-cocinar" class="boton-volver">
+    ← Volver
+    </a>
+
+    <!-- TÍTULO + IMAGEN DESTACADA -->
+    <header class="encabezado-receta">
+    <a href="/" class="receta-titulo-link">
+        <h1 class="titulo-sobre">Clau's Kitchen</h1>
+    </a>
+    </header>
+
+    {image && <img src={image} alt={`Imagen de ${title}`} class="imagen-receta-top" />}
+
+        <!-- Resto del contenido de la receta -->
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+      <slot />
+    </main>
+
+    <!-- MENÚ IGUAL QUE EN TODAS LAS PÁGINAS -->
+    <nav class="menu">
+      <div class="redes">
+        <a href="https://www.facebook.com/tu-pagina" target="_blank" rel="noopener noreferrer" title="Facebook" class="icono-red">
+          <img src="/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://www.instagram.com/tu-pagina" target="_blank" rel="noopener noreferrer" title="Instagram" class="icono-red">
+          <img src="/instagram.png" alt="Instagram" />
+        </a>
+      </div>
+      <ul class="menu-links">
+        <li><a href="/sobre-clau">Sobre Clau</a></li>
+        <li><a href="/claus-favorites">Clau's favorites</a></li>
+        <li><a href="/comenza-a-cocinar">Comenzá a cocinar</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
