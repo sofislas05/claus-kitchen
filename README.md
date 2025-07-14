@@ -13,6 +13,7 @@ This static webpage taught me a lot, and I am pleased with the result!
 
 You can visit the live site here:  
 **[https://sofislas05.github.io/claus-kitchen/](https://sofislas05.github.io/claus-kitchen/)**
+BEST VIEWED USING CHROME
 
 ## 🚀 Features
 
